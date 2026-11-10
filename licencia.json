@@ -1,0 +1,7 @@
+{
+  "transfers": true,
+  "message": "Mensualidad pendiente. Comunícate con tu proveedor del software.",
+  "dueDate": "2099-12-31",
+  "warnDays": 5,
+  "_ayuda": "Cambia transfers a false para suspender el módulo. dueDate es AAAA-MM-DD; warnDays son los días de aviso antes del vencimiento. Ver README.md"
+}
