@@ -10,12 +10,13 @@ Abre `licencia.json` → lápiz (Edit) → *Commit changes*. La app lo nota en h
 |---|---|
 | `transfers` | `true` = el módulo funciona · `false` = suspendido (falta de pago) |
 | `message` | Texto que ve el cliente cuando está suspendido |
-| `dueDate` | Vencimiento de la mensualidad, `AAAA-MM-DD`. Con `transfers: true` el módulo sigue funcionando aunque pase la fecha; solo sale el aviso |
+| `dueDate` | **Último día** en que el módulo funciona (`AAAA-MM-DD`). Al día siguiente se **bloquea solo**. Para renovar, sube la fecha un mes |
+| `graceDays` | (opcional) Días de gracia después de `dueDate` en los que todavía funciona, con aviso. Por defecto 0 |
 | `warnDays` | Días antes de `dueDate` en que empieza a salir el aviso pequeño (por defecto 5) |
 | `warnMessage` | (opcional) Texto propio para el aviso; si no se pone, se arma solo |
 
 ## Qué ve el cliente
-- `transfers: true` y falta poco para `dueDate`: aviso pequeño "renueva para evitar bloqueos".
+- `transfers: true` y faltan `warnDays` días o menos para `dueDate`: aviso pequeño "renueva para evitar bloqueos". El día siguiente a `dueDate` el módulo se bloquea solo.
 - `transfers: false`: el módulo de Transferencias queda bloqueado y muestra `message`.
 - Sin internet o archivo ilegible: el módulo también queda bloqueado, con su explicación.
 
