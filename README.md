@@ -4,7 +4,7 @@ Este repositorio es **público a propósito**: la aplicación lee `licencia.json
 Cualquiera puede **leerlo**, pero solo el dueño del repositorio (y los colaboradores que él agregue) puede **editarlo**.
 
 ## Cómo cambiarlo
-Abre `licencia.json` → lápiz (Edit) → *Commit changes*. La app lo nota en unos 10 minutos.
+Abre `licencia.json` → lápiz (Edit) → *Commit changes*. La app lo nota en hasta ~10 minutos (GitHub tarda ~5 min en refrescar el archivo y la app lo recuerda otros 5).
 
 | Campo | Qué hace |
 |---|---|
