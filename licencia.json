@@ -1,5 +1,5 @@
 {
-  "transfers": true,
+  "transfers": false,
   "message": "Mensualidad pendiente. Comunícate con tu proveedor del software.",
   "dueDate": "2026-11-12",
   "warnDays": 5,
